@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISpy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lq5-Tt-dY4">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Unknown" translatesAutoresizingMaskIntoConstraints="NO" id="W0X-A5-jbs">
+                                        <rect key="frame" x="-320" y="-168" width="1156" height="1245"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="muN-7Z-cTG"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="egP-au-8Ju"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lq5-Tt-dY4" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="6CN-sW-e6C"/>
+                            <constraint firstItem="Lq5-Tt-dY4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qak-DE-Uvd"/>
+                            <constraint firstItem="Lq5-Tt-dY4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WSb-UI-REA"/>
+                            <constraint firstItem="Lq5-Tt-dY4" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="bts-oY-5cd"/>
+                            <constraint firstItem="Lq5-Tt-dY4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gqd-5U-oau"/>
+                            <constraint firstItem="Lq5-Tt-dY4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uRk-Tw-SrU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="W0X-A5-jbs" id="m2d-1r-HbU"/>
+                        <outlet property="scrollView" destination="Lq5-Tt-dY4" id="246-vz-OIl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.615384615384613" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Unknown" width="960" height="1600"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
