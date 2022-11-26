@@ -32,8 +32,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
 
     @IBOutlet weak var scrollView: UIScrollView!
-    
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var myButton: UIButton!
+    
+    @IBAction func butoonClicked(_ sender: Any) {
+        self.myButton.backgroundColor = UIColor.red
+
+    }
     
 }
 
